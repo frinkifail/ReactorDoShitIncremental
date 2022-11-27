@@ -1,5 +1,5 @@
 # ReactorDoShitIncremental
-; aka RDSI
+aka RDSI
 
 A game based on Reactors and such
 
