@@ -1,0 +1,13 @@
+* {
+    background-color: rgb(23, 28, 23);
+    color: snow;
+    font-family: 'Roboto Mono', 'Consolas', 'Inconsolata', 'Courier New', 'Courier', monospace, monospace;
+}
+footer {
+    font-size: smaller;
+}
+button {
+    height: 4rem;
+    width: 17rem;
+    border-color: snow;
+}
