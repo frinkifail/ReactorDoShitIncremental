@@ -25,3 +25,4 @@ document.getElementById("debug checkCalc").onclick = function(){
     console.log("Redone PerTickCalculation!");
 }
 setInterval(update, 1000/20); // ineffecient +1000 | efficiency -1000
+console.log(data.simulons);
