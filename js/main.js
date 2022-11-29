@@ -15,7 +15,7 @@ function update() {
     document.getElementById("incd").innerText = data.income.toLocaleString();
     if (!perTickCalculated) {perTickCalculate()};
     data.power += data.powergenpt;
-    data.simulons += data.income
+    data.simulons += data.income;
 }
 
 window.onload = () => {

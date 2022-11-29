@@ -11,3 +11,29 @@ button {
     width: 17rem;
     border-color: snow;
 }
+button.canPurchase {
+    border-color: darkgreen;
+    transition-duration: 0.5s;
+}
+
+button.canPurchase:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+button.cantPurchase {
+    border-color: darkred;
+}
+
+button.cantPurchase:hover {
+    cursor: not-allowed;
+}
+
+button.purchased {
+    border-color: purple;
+}
+
+button.purchased:hover {
+    cursor: not-allowed;
+}
