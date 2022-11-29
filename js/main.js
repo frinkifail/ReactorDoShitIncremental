@@ -11,6 +11,8 @@ function perTickCalculate() {
 function update() {
     document.getElementById("powerd").innerText = data.power.toLocaleString();
     document.getElementById("powergend").innerText = data.powergenpt.toLocaleString();
+    document.getElementById("simd").innerText = data.simulons.toLocaleString();
+    document.getElementById("incd").innerText = data.income.toLocaleString();
     if (!perTickCalculated) {perTickCalculate()};
     data.power += data.powergenpt;
 }

@@ -1,4 +1,8 @@
 const data = {
+    // Risher
+    simulons: 0,
+    income: 0,
+
     // Powah!!
     power: 100,
     power_mul: 1,
