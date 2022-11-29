@@ -41,13 +41,10 @@ button.purchased:hover {
     margin: 0.4rem 0.2rem 0.4rem 0.2rem;
     font-size: 21px;
     line-height: 1.75;
-    height: 11rem;
+    height: 8rem;
     width: 20rem;
     font-family: 'Roboto Mono', 'Consolas', 'Inconsolata', 'Courier New', 'Courier', monospace, monospace;
     border-width: 0.3rem;
     color: darkgray;
     background-color: #333333;
-    margin-left: 120px;
-    height: 80px;
-    width: 30%;
 }
