@@ -13,6 +13,8 @@ function update() {
     document.getElementById("powergend").innerText = data.powergenpt.toLocaleString();
     document.getElementById("simd").innerText = data.simulons.toLocaleString();
     document.getElementById("incd").innerText = data.income.toLocaleString();
+    document.getElementById("generator1 cost").innerText = data.generators[1].cost.toLocaleString();
+    document.getElementById("generator1 amount").innerText = data.generators[1].amount.toLocaleString();
     if (!perTickCalculated) {perTickCalculate()};
     data.power += data.powergenpt;
     data.simulons += data.income;

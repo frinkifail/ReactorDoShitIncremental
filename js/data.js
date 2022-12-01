@@ -11,7 +11,8 @@ const data = {
 
     // Generators+
     generators: [
-        {pertick: 0.1, amount: 1, boost: 1.08} // passive gain (get on start)
+        {pertick: 0.1, amount: 1, boost: 1.08, cost: 0}, // passive gain (get on start)
+        {pertick: 1, amount: 0, boost: 1.10, cost: 50}   // Generator 1
     ],
 
     // Extreme Reactors
