@@ -16,6 +16,7 @@ function update() {
     document.getElementById("generator1 cost").innerText = data.generators[1].cost.toLocaleString();
     document.getElementById("generator1 amount").innerText = data.generators[1].amount.toLocaleString();
     if (!perTickCalculated) {perTickCalculate()};
+    if (data.simulons >= data.generators[1].cost) {document.getElementById("generator1 button").classList = ['generators-buttons', 'canPurchase']} else {document.getElementById("generator1 button").classList = ['generators-buttons', 'cantPurchase']}
     data.power += data.powergenpt;
     data.simulons += data.income;
 }
