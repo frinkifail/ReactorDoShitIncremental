@@ -2,6 +2,7 @@ const data = {
     // Risher
     simulons: 0,
     income: 0.01, // slower passive income
+    // bro i swear this thing barely wants to change 
 
     // Powah!!
     power: 100,
