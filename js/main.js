@@ -1,4 +1,4 @@
-const ver = "1.2.0";
+const ver = "1.2.1 | Generators Update";
 
 function perTickCalculate() {
     for (let i = 0; i < data.generators.length; i++) {
