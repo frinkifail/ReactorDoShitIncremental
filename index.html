@@ -7,6 +7,7 @@
     <title>RDSI Rewrite</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="textbox.css">
+    <link rel="stylesheet" href="switch.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
             <h2 style="color: aquamarine;"><span id="d.sim">{LOADING}</span>§</h2>
             <h3 style="color: rgb(237, 100, 100);"><span id="d.sim.ps">{LOADING}</span> §/s</h3>
         </center>
-        
+
         <!-- <h3><span style="color: lime;" id="powerd">{LOADING}</span>RF | <span
                 style="color: rebeccapurple;" id="powergend">{LOADING}</span>RF/t</h2> -->
     </nav>
@@ -26,7 +27,7 @@
                 <br>
                 <span class="cost">
                     Cost: <span id="gens.g.cost" class="text">{LOADING}</span>
-                </p>
+                    </p>
             </button>
         </section>
     </section>
@@ -48,10 +49,15 @@
             <input type="number" required id="set.tickspeed" value=150>
             <label for="set.tickspeed">Update Tickspeed</label>
         </div> <br>
+        <div class="material-checkbox">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">Test</label>
+        </div>
         <button id="set.apply">Apply</button>
     </section>
 </body>
 <script src="dist/data.js"></script>
 <script src="dist/main.js"></script>
 <script src="dist/generators.js"></script>
+
 </html>
