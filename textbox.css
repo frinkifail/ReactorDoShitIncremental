@@ -1,0 +1,38 @@
+.material-text-field {
+    position: relative;
+    width: 300px;
+}
+
+.material-text-field input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #2196F3;
+    padding: 8px 0;
+    font-size: 16px;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s;
+    font-family: inherit;
+    color: snow;
+}
+
+.material-text-field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: #888;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.material-text-field input:focus {
+    outline: none;
+    border-bottom-color: #FF4081;
+}
+
+.material-text-field input:focus+label,
+.material-text-field input:not(:placeholder-shown)+label {
+    top: -18px;
+    font-size: 12px;
+    color: #FF4081;
+}

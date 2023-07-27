@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RDSI Rewrite</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="switch.css">
+    <link rel="stylesheet" href="textbox.css">
 </head>
 
 <body>
@@ -43,8 +43,12 @@
         </div>
     </section>
     <section> <!-- Settings -->
-        <h3>Settings</h3>
-        
+        <h3>Settings</h3> <br>
+        <div class="material-text-field">
+            <input type="number" required id="set.tickspeed" value=150>
+            <label for="set.tickspeed">Update Tickspeed</label>
+        </div> <br>
+        <button id="set.apply">Apply</button>
     </section>
 </body>
 <script src="dist/data.js"></script>
