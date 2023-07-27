@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Commit",
+            "type": "shell",
+            "command": "D:; cd D:\\Codespaces\\RDSI\\rewrite; git commit -am \"commit\""
+        }
+    ]
+  }
+  
