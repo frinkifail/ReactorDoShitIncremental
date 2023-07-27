@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDSI Rewrite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav> <!-- Money Display -->
+        <center> <!-- Display/Sim/PerSecond -->
+            <h2 style="color: aquamarine;"><span id="d.sim">{LOADING}</span>§</h2>
+            <h3 style="color: rgb(237, 100, 100);"><span id="d.sim.ps">{LOADING}</span> §/s</h3>
+        </center>
+        
+        <!-- <h3><span style="color: lime;" id="powerd">{LOADING}</span>RF | <span
+                style="color: rebeccapurple;" id="powergend">{LOADING}</span>RF/t</h2> -->
+    </nav>
+    <section>
+        <section id="generators">
+            <button id="gen.g" class="generators-buttons canPurchase">
+                g tier generator (<span id="gens.g.amount" class="text">{LOADING}</span>)
+                <br>
+                <span class="cost">
+                    Cost: <span id="gens.g.cost" class="text">{LOADING}</span>
+                </p>
+            </button>
+        </section>
+    </section>
+    <section> <!-- Credits -->
+        <h3>Credits</h3>
+        <div id="credits">
+            <strong>@frinkifail - Game Creator</strong><br />
+            <!-- <p style="font-style: italic;">cub#6016 | give me rent - suggesting generator 1's name</p> -->
+        </div>
+        <footer>ReactorDoShitIncremental Rewrite <span id="i.ver">1.0.0</span></footer>
+    </section>
+</body>
+<script src="dist/data.js"></script>
+<script src="dist/main.js"></script>
+<script src="dist/generators.js"></script>
+</html>

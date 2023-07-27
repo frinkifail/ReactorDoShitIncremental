@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(23, 28, 23);
+    color: snow;
+    font-family: 'Roboto Mono', 'Consolas', 'Inconsolata', 'Courier New', 'Courier', monospace, monospace;
+}
+footer {
+    font-size: smaller;
+}
+button {
+    height: 4rem;
+    width: 17rem;
+    border-color: snow;
+}
+button.canPurchase {
+    border-color: darkgreen;
+    cursor: pointer;
+}
+
+button.canPurchase:hover {
+    transform: scale(0.9);
+}
+
+button.canPurchase:active {
+    transform: scale(1);
+    transition-delay: 0.5ms;
+}
+
+button.cantPurchase {
+    border-color: darkred;
+    cursor: not-allowed;
+}
+
+button.purchased {
+    border-color: purple;
+    cursor: not-allowed;
+}
+
+.generators-buttons {
+    margin: 0.4rem 0.2rem 0.4rem 0.2rem;
+    font-size: 21px;
+    line-height: 1.75;
+    font-family: inherit;
+    border-width: 0.3rem;
+    color: darkgray;
+    background-color: #2a2a2a;
+    width: 50%;
+    transition: 0.3s ease-in-out transform;
+    border-radius: 8px;
+    border-style: solid;
+    padding-bottom: 77px;
+}
+#generators {
+    display: grid;
+    gap: 10px;
+}
+.generators-buttons > span.cost {
+    font-size: 18px;
+}
+.generators-buttons > * > .text, .generators-buttons > .text {
+    background-color: #333;
+    border-radius: 4px;
+    color: aquamarine;
+}
