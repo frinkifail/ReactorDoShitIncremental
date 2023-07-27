@@ -3,16 +3,17 @@ function e(name) {
     return document.getElementById(name);
 }
 var _typesafe = {
-    el: function (element) {
+    el: function (element, _name) {
         if (element) {
             return element;
         }
         else {
+            console.error(">> Element ".concat(_name, " not found."));
             return document.createElement('div');
         }
     },
     e: function (name) {
-        return _typesafe.el(e(name));
+        return _typesafe.el(e(name), name);
     }
 };
 var GeneratorIndex = {
@@ -55,7 +56,9 @@ function draw_gen_availability(available, element) {
 function update(dt) {
     data.simulons += data.income * dt / 1000;
     calculate_income();
-    // console.log(dt/1000)
 }
+_typesafe.e('dev.add').onclick = function () {
+    data.simulons += 50;
+};
 setInterval(function () { return update(get_dt()); }, data.tickspeed);
 setInterval(draw, data.draw_tickspeed);

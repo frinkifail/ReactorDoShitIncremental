@@ -6,8 +6,8 @@ var data = {
     power: 0,
     power_generating: 0,
     generators: [
-        { pertick: 0.05, amount: 1, boost: 0, cost: 0 },
-        { pertick: 1.5, amount: 1, boost: 1.18, cost: 10 }
+        { pertick: 0.5, amount: 1, boost: 0, cost: 0 },
+        { pertick: 1.5, amount: 0, boost: 1.18, cost: 10 } // G-Tier
     ],
     last_update: Date.now()
 };

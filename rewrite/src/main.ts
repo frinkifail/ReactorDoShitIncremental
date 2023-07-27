@@ -4,11 +4,11 @@ function e(name: string) {
     return document.getElementById(name)
 }
 const _typesafe = {
-    el(element: HTMLElement | null) {
-        if (element) {return element} else {return document.createElement('div')}
+    el(element: HTMLElement | null, _name: string) {
+        if (element) {return element} else {console.error(`>> Element ${_name} not found.`); return document.createElement('div')}
     },
     e(name: string) {
-        return _typesafe.el(e(name))
+        return _typesafe.el(e(name), name)
     }
 }
 const GeneratorIndex = {
@@ -52,6 +52,10 @@ function draw_gen_availability(available: boolean, element: HTMLElement) {
 function update(dt: number) {
     data.simulons += data.income * dt/1000
     calculate_income()
+}
+
+_typesafe.e('dev.add').onclick = () => {
+    data.simulons += 50
 }
 
 setInterval(() => update(get_dt()), data.tickspeed)
