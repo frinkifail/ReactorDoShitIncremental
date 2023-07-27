@@ -7,9 +7,12 @@ footer {
     font-size: smaller;
 }
 button {
-    height: 4rem;
-    width: 17rem;
-    border-color: snow;
+    padding: 5px 20px;
+    background: #2a2a2a;
+    border: 2px solid #333;
+    color: snow;
+    font-family: inherit;
+    border-radius: 8px;
 }
 button.canPurchase {
     border-color: darkgreen;
@@ -39,15 +42,11 @@ button.purchased {
     margin: 0.4rem 0.2rem 0.4rem 0.2rem;
     font-size: 21px;
     line-height: 1.75;
-    font-family: inherit;
     border-width: 0.3rem;
     color: darkgray;
-    background-color: #2a2a2a;
     width: 50%;
     transition: 0.3s ease-in-out transform;
-    border-radius: 8px;
     border-style: solid;
-    padding-bottom: 77px;
 }
 #generators {
     display: grid;
