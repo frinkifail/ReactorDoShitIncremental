@@ -60,5 +60,11 @@ function update(dt) {
 _typesafe.e('dev.add').onclick = function () {
     data.simulons += 50;
 };
-setInterval(function () { return update(get_dt()); }, data.tickspeed);
+var update_interval = setInterval(function () { return update(get_dt()); }, data.tickspeed);
 setInterval(draw, data.draw_tickspeed);
+_typesafe.e('set.apply').onclick = function () {
+    var tickspeed_textbox = _typesafe.e('set.tickspeed');
+    data.tickspeed = parseFloat(tickspeed_textbox.value);
+    clearInterval(update_interval);
+    update_interval = setInterval(function () { return update(get_dt()); }, data.tickspeed);
+};

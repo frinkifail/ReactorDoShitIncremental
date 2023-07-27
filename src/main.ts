@@ -58,5 +58,12 @@ _typesafe.e('dev.add').onclick = () => {
     data.simulons += 50
 }
 
-setInterval(() => update(get_dt()), data.tickspeed)
+let update_interval = setInterval(() => update(get_dt()), data.tickspeed)
 setInterval(draw, data.draw_tickspeed)
+
+_typesafe.e('set.apply').onclick = () => {
+    const tickspeed_textbox = _typesafe.e('set.tickspeed') as HTMLInputElement
+    data.tickspeed = parseFloat(tickspeed_textbox.value)
+    clearInterval(update_interval)
+    update_interval = setInterval(() => update(get_dt()), data.tickspeed)
+}
