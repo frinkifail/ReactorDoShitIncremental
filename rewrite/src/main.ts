@@ -52,7 +52,6 @@ function draw_gen_availability(available: boolean, element: HTMLElement) {
 function update(dt: number) {
     data.simulons += data.income * dt/1000
     calculate_income()
-    // console.log(dt/1000)
 }
 
 setInterval(() => update(get_dt()), data.tickspeed)
