@@ -2,7 +2,7 @@ body {
     margin: 15px;
     background-color: rgb(23, 28, 23);
     color: snow;
-    font-family: 'Roboto Mono', 'Consolas', 'Inconsolata', 'Courier New', 'Courier', monospace, monospace;
+    font-family: 'Product Sans', 'Roboto', 'Inter', 'JetBrains Mono', 'Roboto Mono', 'Consolas', 'Inconsolata', 'Courier New', 'Courier', monospace;
 }
 footer {
     font-size: smaller;
@@ -45,7 +45,7 @@ button.purchased {
     line-height: 1.75;
     border-width: 0.3rem;
     color: darkgray;
-    width: 50%;
+    width: 25%;
     transition: 0.3s ease-in-out transform;
     border-style: solid;
 }
