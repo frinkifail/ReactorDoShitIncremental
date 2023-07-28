@@ -11,3 +11,10 @@ var data = {
     ],
     last_update: Date.now()
 };
+var _typesafe_savebutton = document.getElementById('set.save');
+if (!_typesafe_savebutton) {
+    _typesafe_savebutton = document.createElement('a');
+}
+_typesafe_savebutton.onclick = function () {
+    localStorage.setItem('saveslot-0', JSON.stringify(data));
+};

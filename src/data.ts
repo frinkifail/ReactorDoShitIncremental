@@ -18,7 +18,7 @@ interface IData {
 
     last_update: number
 }
-const data: IData = {
+let data: IData = {
     simulons: 0,
     income: 0.5,
 
@@ -34,4 +34,9 @@ const data: IData = {
     ],
 
     last_update: Date.now()
+}
+let _typesafe_savebutton = document.getElementById('set.save');
+if (!_typesafe_savebutton) {_typesafe_savebutton = document.createElement('a')}
+_typesafe_savebutton.onclick = () => {
+    localStorage.setItem('saveslot-0', JSON.stringify(data));
 }

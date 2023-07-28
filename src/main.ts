@@ -19,6 +19,9 @@ const GeneratorIndex = {
 window.onload = () => {
     console.info("> Deltatime is 1 frame slower :staring_cat:")
     _typesafe.e('i.ver').textContent = _VERSION;
+    const localStorageData = localStorage.getItem('saveslot-0')
+    if (localStorageData !== null) data = JSON.parse(localStorageData)
+    console.info("> Save Loaded")
 }
 
 function draw() {
