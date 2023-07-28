@@ -30,7 +30,8 @@ let data: IData = {
 
     generators: [
         {pertick: 0.5, amount: 1, boost: 0, cost: 0},
-        {pertick: 1.5, amount: 0, boost: 1.18, cost: 10} // G-Tier
+        {pertick: 1.0, amount: 0, boost: 1.08, cost: 10}, // G-Tier
+        {pertick: 1.5, amount: 0, boost: 1.12, cost: 30}
     ],
 
     last_update: Date.now()

@@ -1,5 +1,6 @@
 const generators = {
-    g_tier: _typesafe.e('gen.g')
+    g_tier: _typesafe.e('gen.g'),
+    cat_meme: _typesafe.e('gen.cat')
 }
 
 function buy_generator(index: number): boolean {
@@ -23,6 +24,9 @@ function calculate_income() {
 
 generators.g_tier.onclick = () => {
     buy_generator(GeneratorIndex.g_tier)
+}
+generators.cat_meme.onclick = () => {
+    buy_generator(GeneratorIndex.cat_meme)
 }
 
 _typesafe.e('gen.max').onclick = () => {

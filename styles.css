@@ -45,13 +45,18 @@ button.purchased {
     line-height: 1.75;
     border-width: 0.3rem;
     color: darkgray;
-    width: 25%;
+    width: 100%;
     transition: 0.3s ease-in-out transform;
     border-style: solid;
 }
 #generators {
     display: grid;
     gap: 10px;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    justify-items: start;
 }
 .generators-buttons > span.cost {
     font-size: 18px;

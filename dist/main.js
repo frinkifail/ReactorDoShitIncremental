@@ -18,7 +18,8 @@ var _typesafe = {
 };
 var GeneratorIndex = {
     passive: 0,
-    g_tier: 1
+    g_tier: 1,
+    cat_meme: 2
 };
 window.onload = function () {
     console.info("> Deltatime is 1 frame slower :staring_cat:");
@@ -31,9 +32,12 @@ window.onload = function () {
 function draw() {
     _typesafe.e('d.sim').textContent = data.simulons.toLocaleString();
     _typesafe.e('d.sim.ps').textContent = data.income.toLocaleString();
-    _typesafe.e('gens.g.amount').textContent = data.generators[1].amount.toLocaleString();
-    _typesafe.e('gens.g.cost').textContent = data.generators[1].cost.toLocaleString();
+    _typesafe.e('gens.g.amount').textContent = data.generators[GeneratorIndex.g_tier].amount.toLocaleString();
+    _typesafe.e('gens.g.cost').textContent = data.generators[GeneratorIndex.g_tier].cost.toLocaleString();
+    _typesafe.e('gens.cat.amount').textContent = data.generators[GeneratorIndex.cat_meme].amount.toLocaleString();
+    _typesafe.e('gens.cat.cost').textContent = data.generators[GeneratorIndex.cat_meme].cost.toLocaleString();
     draw_gen_availability(available(GeneratorIndex.g_tier), _typesafe.e('gen.g'));
+    draw_gen_availability(available(GeneratorIndex.cat_meme), _typesafe.e('gen.cat'));
 }
 function get_dt() {
     var now = Date.now();
